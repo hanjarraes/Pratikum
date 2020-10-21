@@ -1,0 +1,32 @@
+//table scroll
+.dpy-contents{
+    display: contents;
+}
+.dpy-flex{
+    display: flex;
+}
+
+.width-25{width: 25%;}
+.width-50{width: 50%;}
+.width-75{width: 75%;}
+.width-100{width: 100%;}
+
+.tableScroll1 {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  
+.tableScroll2 {
+    display: table-cell;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+//table scroll
+
+//from control
+
+.bg-module {
+    background-color: #30d2e4!important;
+}

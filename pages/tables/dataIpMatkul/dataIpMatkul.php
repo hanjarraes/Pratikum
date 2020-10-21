@@ -22,8 +22,8 @@
                   <!-- ./row -->
                 </div><!-- /.container-fluid -->
                 <div class="modal fade" id="modal-primary">
-                  <div class="modal-dialog">
-                    <div class="modal-content bg-primary">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content"style="background-color: #52585f; color:#c2c7d0; border-radius: 1rem;">
                       <div class="modal-header">
                         <h4 class="modal-title">Primary Modal</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -31,49 +31,53 @@
                         </button>
                       </div>
                       <div class="modal-body">
-                      <div class="card card-primary">
-                              <div class="card-header">
-                                <h3 class="card-title">General</h3>
-
-                                <div class="card-tools">
-                                  <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                                    <i class="fas fa-minus"></i>
-                                  </button>
-                                </div>
+                          <div class="card-body">
+                              <div class="form-group dpy-flex">
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Project Name</label>
+                                    <input type="text" id="inputName" class="form-control">
+                                  </div>
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Project Name</label>
+                                    <input type="text" id="inputName" class="form-control">
+                                  </div>
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Project Name</label>
+                                    <input type="text" id="inputName" class="form-control">
+                                  </div>
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Project Name</label>
+                                    <input type="text" id="inputName" class="form-control">
+                                  </div>
                               </div>
-                              <div class="card-body">
-                                <div class="form-group">
-                                  <label for="inputName">Project Name</label>
-                                  <input type="text" id="inputName" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                  <label for="inputDescription">Project Description</label>
-                                  <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-                                </div>
-                                <div class="form-group">
-                                  <label for="inputStatus">Status</label>
-                                  <select id="inputStatus" class="form-control custom-select">
-                                    <option selected disabled>Select one</option>
-                                    <option>On Hold</option>
-                                    <option>Canceled</option>
-                                    <option>Success</option>
-                                  </select>
-                                </div>
-                                <div class="form-group">
-                                  <label for="inputClientCompany">Client Company</label>
-                                  <input type="text" id="inputClientCompany" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                  <label for="inputProjectLeader">Project Leader</label>
-                                  <input type="text" id="inputProjectLeader" class="form-control">
-                                </div>
+                              <div class="form-group dpy-flex">
+                                  <div class="form-group width-50 pr-3">
+                                    <label for="inputDescription">Project Description</label>
+                                    <textarea id="inputDescription" class="form-control" rows="4"></textarea>
+                                  </div>
+                                  <div class="form-group width-50 pr-3">
+                                      <label for="inputStatus">Status</label>
+                                        <select id="inputStatus" class="form-control custom-select">
+                                          <option selected disabled>Select one</option>
+                                          <option>On Hold</option>
+                                          <option>Canceled</option>
+                                          <option>Success</option>
+                                        </select>
+                                        <label for="inputStatus">Status</label>
+                                        <select id="inputStatus" class="form-control custom-select">
+                                          <option selected disabled>Select one</option>
+                                          <option>On Hold</option>
+                                          <option>Canceled</option>
+                                          <option>Success</option>
+                                        </select>
+                                  </div>
                               </div>
-                              <!-- /.card-body -->
-                            </div>
+                          </div>
                       </div>
+
                       <div class="modal-footer justify-content-between">
                         <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-outline-light">Save changes</button>
+                        <button type="button" class="btn btn-outline-light btn-primary">Save changes</button>
                       </div>
                     </div>
                     <!-- /.modal-content -->
@@ -117,131 +121,133 @@
                 </section>
               </div>
               <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example2" class="table table-bordered table-hover">
-                  <thead>
-                  <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
-                    <th>Update</th>
-                    <th>Delete</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 4.0
-                    </td>
-                    <td>Win 95+</td>
-                    <td> 4</td>
-                    <td>X</td>
-                    <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /> </button></td>
-                    <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 5.0
-                    </td>
-                    <td>Win 95+</td>
-                    <td>5</td>
-                    <td>C</td>
-                    <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /> </button></td>
-                    <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 5.5
-                    </td>
-                    <td>Win 95+</td>
-                    <td>5.5</td>
-                    <td>A</td>
-                    <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /> </button></td>
-                    <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet
-                      Explorer 6
-                    </td>
-                    <td>Win 98+</td>
-                    <td>6</td>
-                    <td>A</td>
-                    <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                    <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>Internet Explorer 7</td>
-                    <td>Win XP SP2+</td>
-                    <td>7</td>
-                    <td>A</td>
-                    <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                    <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                  </tr>
-                  <tr>
-                    <td>Trident</td>
-                    <td>AOL browser (AOL desktop)</td>
-                    <td>Win XP</td>
-                    <td>6</td>
-                    <td>A</td>
-                    <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                    <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Firefox 1.0</td>
-                    <td>Win 98+ / OSX.2+</td>
-                    <td>1.7</td>
-                    <td>A</td>
-                    <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                    <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Firefox 1.5</td>
-                    <td>Win 98+ / OSX.2+</td>
-                    <td>1.8</td>
-                    <td>A</td>
-                    <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                    <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Firefox 2.0</td>
-                    <td>Win 98+ / OSX.2+</td>
-                    <td>1.8</td>
-                    <td>A</td>
-                    <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                    <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                  </tr>
-                  <tr>
-                    <td>Gecko</td>
-                    <td>Firefox 3.0</td>
-                    <td>Win 2k+ / OSX.3+</td>
-                    <td>1.9</td>
-                    <td>A</td>
-                    <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                    <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                  </tr>
-                  </tbody>
-                  <tfoot>
-                  <tr>
-                    <th>Rendering engine</th>
-                    <th>Browser</th>
-                    <th>Platform(s)</th>
-                    <th>Engine version</th>
-                    <th>CSS grade</th>
-                    <th>Update</th>
-                    <th>Delete</th>
-                  </tr>
-                  </tfoot>
-                </table>
+              <div class="tableScroll1 dpy-contents">
+                <div class="card-body tableScroll2">
+                  <table id="example2" class="table table-bordered table-hover">
+                    <thead>
+                    <tr>
+                      <th>Rendering engine</th>
+                      <th>Browser</th>
+                      <th>Platform(s)</th>
+                      <th>Engine version</th>
+                      <th>CSS grade</th>
+                      <th>Update</th>
+                      <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>Trident</td>
+                      <td>Internet
+                        Explorer 4.0
+                      </td>
+                      <td>Win 95+</td>
+                      <td> 4</td>
+                      <td>X</td>
+                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /> </button></td>
+                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
+                    </tr>
+                    <tr>
+                      <td>Trident</td>
+                      <td>Internet
+                        Explorer 5.0
+                      </td>
+                      <td>Win 95+</td>
+                      <td>5</td>
+                      <td>C</td>
+                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /> </button></td>
+                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
+                    </tr>
+                    <tr>
+                      <td>Trident</td>
+                      <td>Internet
+                        Explorer 5.5
+                      </td>
+                      <td>Win 95+</td>
+                      <td>5.5</td>
+                      <td>A</td>
+                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /> </button></td>
+                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
+                    </tr>
+                    <tr>
+                      <td>Trident</td>
+                      <td>Internet
+                        Explorer 6
+                      </td>
+                      <td>Win 98+</td>
+                      <td>6</td>
+                      <td>A</td>
+                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
+                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
+                    </tr>
+                    <tr>
+                      <td>Trident</td>
+                      <td>Internet Explorer 7</td>
+                      <td>Win XP SP2+</td>
+                      <td>7</td>
+                      <td>A</td>
+                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
+                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
+                    </tr>
+                    <tr>
+                      <td>Trident</td>
+                      <td>AOL browser (AOL desktop)</td>
+                      <td>Win XP</td>
+                      <td>6</td>
+                      <td>A</td>
+                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
+                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
+                    </tr>
+                    <tr>
+                      <td>Gecko</td>
+                      <td>Firefox 1.0</td>
+                      <td>Win 98+ / OSX.2+</td>
+                      <td>1.7</td>
+                      <td>A</td>
+                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
+                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
+                    </tr>
+                    <tr>
+                      <td>Gecko</td>
+                      <td>Firefox 1.5</td>
+                      <td>Win 98+ / OSX.2+</td>
+                      <td>1.8</td>
+                      <td>A</td>
+                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
+                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
+                    </tr>
+                    <tr>
+                      <td>Gecko</td>
+                      <td>Firefox 2.0</td>
+                      <td>Win 98+ / OSX.2+</td>
+                      <td>1.8</td>
+                      <td>A</td>
+                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
+                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
+                    </tr>
+                    <tr>
+                      <td>Gecko</td>
+                      <td>Firefox 3.0</td>
+                      <td>Win 2k+ / OSX.3+</td>
+                      <td>1.9</td>
+                      <td>A</td>
+                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
+                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                      <th>Rendering engine</th>
+                      <th>Browser</th>
+                      <th>Platform(s)</th>
+                      <th>Engine version</th>
+                      <th>CSS grade</th>
+                      <th>Update</th>
+                      <th>Delete</th>
+                    </tr>
+                    </tfoot>
+                  </table>
+                </div>
               </div>
               <!-- /.card-body -->
             </div>
