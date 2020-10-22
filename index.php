@@ -90,14 +90,9 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li <?php if( $_GET['page']==="Dashboard" || 
-                        $_GET['page']==="Contacts"  || 
-                        $_GET['page']==="Profiles") { ?> class="nav-item menu-open"<?php }
-                    else {?> class="nav-item"<?php } ?>>
-            <a href="#" <?php if( $_GET['page']==="Dashboard" || 
-                                  $_GET['page']==="Contacts"  || 
-                                  $_GET['page']==="Profiles") { ?> class="active nav-link"<?php }
-                              else {?> class="nav-link"<?php } ?>>
+
+          <li class="nav-item menu-open">
+            <a href="#" class="active nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -106,23 +101,20 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="index.php?page=Dashboard" title="Dashboard" 
-                <?php if($_GET['page']==="Dashboard") { ?> class="active nav-link"<?php }else {?> class="nav-link"<?php } ?>>
+                <a href="index.php?page=Dashboard" title="Dashboard" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Dashboard</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="?page=Contacts" title="Contacts"
-                  <?php if($_GET['page']==="Contacts") { ?> class="active nav-link"<?php }else {?> class="nav-link"<?php } ?>>
+                <a href="?page=Contacts" title="Contacts" class="nav-link" >
                   <i class="far fa-circle nav-icon"></i>
                   <p>Contacts</p>
                 </a>
               </li>
               </li>
               <li class="nav-item">
-                <a href="?page=Profiles" title="Profiles"
-                <?php if($_GET['page']==="Profiles") { ?> class="active nav-link"<?php }else {?> class="nav-link"<?php } ?>>
+                <a href="?page=Profiles" title="Profiles"class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Profile</p>
                 </a>
@@ -164,16 +156,8 @@
               </li>
             </ul>
           </li> -->
-          <li <?php if( $_GET['page']==="DataMahasiswa" || 
-                                  $_GET['page']==="DataDosen" || 
-                                  $_GET['page']==="DataIpMatkul" || 
-                                  $_GET['page']==="DataMatkul") { ?> class="nav-item menu-open"<?php }
-                              else {?> class="nav-item"<?php } ?>>
-            <a href="#" <?php if( $_GET['page']==="DataMahasiswa" || 
-                                  $_GET['page']==="DataDosen" || 
-                                  $_GET['page']==="DataIpMatkul" || 
-                                  $_GET['page']==="DataMatkul") { ?> class="active nav-link"<?php }
-                              else {?> class="nav-link"<?php } ?>>
+            <li class="nav-item menu-open">
+            <a href="#" class="active nav-link">
               <i class="nav-icon fas fa-table"></i>
               <p>
                 Tables Data
@@ -182,29 +166,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-              <a href="?page=DataMahasiswa" title="DataMahasiswa"
-              <?php if($_GET['page']==="DataMahasiswa") { ?> class="active nav-link"<?php }else {?> class="nav-link"<?php } ?>>
+              <a href="?page=DataMahasiswa" title="DataMahasiswa"class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tables Mahasiswa</p>
                 </a>
               </li>
               <li class="nav-item">
-              <a href="?page=DataDosen" title="DataDosen"
-              <?php if($_GET['page']==="DataDosen") { ?> class="active nav-link"<?php }else {?> class="nav-link"<?php } ?>>
+              <a href="?page=DataDosen" title="DataDosen" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tables Mata Kuliah</p>
                 </a>
               </li>
               <li class="nav-item">
-              <a href="?page=DataIpMatkul" title="DataIpMatkul"
-              <?php if($_GET['page']==="DataIpMatkul") { ?> class="active nav-link"<?php }else {?> class="nav-link"<?php } ?>>
+              <a href="?page=DataIpMatkul" title="DataIpMatkul" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tables IP Mata Kuliah</p>
                 </a>
               </li>
               <li class="nav-item">
-              <a href="?page=DataMatkul" title="DataMatkul"
-                <?php if($_GET['page']==="DataMatkul") { ?> class="active nav-link"<?php }else {?> class="nav-link"<?php } ?>>
+              <a href="?page=DataMatkul" title="DataMatkul" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tables Dosen Mata Kuliah</p>
                 </a>
