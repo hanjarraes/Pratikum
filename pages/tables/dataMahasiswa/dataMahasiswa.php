@@ -126,124 +126,48 @@
                   <table id="example2" class="table table-bordered table-hover">
                     <thead>
                     <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform(s)</th>
-                      <th>Engine version</th>
-                      <th>CSS grade</th>
-                      <th>Update</th>
-                      <th>Delete</th>
+                      <th>NIM</th>
+                      <th>Nama Mahasiswa</th>
+                      <th>Program Studi</th>
+                      <th>Nama Kelas</th>
+                      <th>Email Uis</th>
+                      <th>ACTION</th>
                     </tr>
                     </thead>
+                    <?php
+                        // include "../config/conn.php";
+                        $sql = mysqli_query($conn, "SELECT * FROM tb_mahasiswa");
+                         while ($row = mysqli_fetch_array($sql)) {
+                         ?>
                     <tbody>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 4.0
+                    <tr style="cursor: pointer">
+                      <td><?= $row['nim']; ?></td>
+                      <td><?= $row['nama_mahasiswa']; ?></td>
+                      <td><?= $row['program_studi']; ?></td>
+                      <td><?= $row['nama_kelas']; ?></td>
+                      <td><?= $row['email_uis']; ?></td>
+                      <td class="d-flex">
+                        <a  class="btn mr-3 btn-outline-primary btn-sm " href="../includes/delete/delete-kepala-sekolah.php?id=<?= $row['id']; ?>">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a  class="btn mr-3 btn-outline-warning btn-sm " href="../includes/delete/delete-kepala-sekolah.php?id=<?= $row['id']; ?>">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a class="btn  btn-outline-danger btn-sm text-danger" href="../includes/delete/delete-kepala-sekolah.php?id=<?= $row['id']; ?>" >
+                            <i class="fas fa-trash"></i>
+                        </a>
                       </td>
-                      <td>Win 95+</td>
-                      <td> 4</td>
-                      <td>X</td>
-                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /> </button></td>
-                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
                     </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 5.0
-                      </td>
-                      <td>Win 95+</td>
-                      <td>5</td>
-                      <td>C</td>
-                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /> </button></td>
-                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 5.5
-                      </td>
-                      <td>Win 95+</td>
-                      <td>5.5</td>
-                      <td>A</td>
-                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /> </button></td>
-                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 6
-                      </td>
-                      <td>Win 98+</td>
-                      <td>6</td>
-                      <td>A</td>
-                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet Explorer 7</td>
-                      <td>Win XP SP2+</td>
-                      <td>7</td>
-                      <td>A</td>
-                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>AOL browser (AOL desktop)</td>
-                      <td>Win XP</td>
-                      <td>6</td>
-                      <td>A</td>
-                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 1.0</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.7</td>
-                      <td>A</td>
-                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 1.5</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 2.0</td>
-                      <td>Win 98+ / OSX.2+</td>
-                      <td>1.8</td>
-                      <td>A</td>
-                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                    </tr>
-                    <tr>
-                      <td>Gecko</td>
-                      <td>Firefox 3.0</td>
-                      <td>Win 2k+ / OSX.3+</td>
-                      <td>1.9</td>
-                      <td>A</td>
-                      <td><button type="button" class="btn btn-block btn-outline-warning btn-sm"> <i class="nav-icon fas fa-edit" /></button></td>
-                      <td><button type="button" class="btn btn-block btn-outline-danger btn-sm"><i class="nav-icon fas fa-trash" />  </button></td>
-                    </tr>
+                    <?php  } ?>
                     </tbody>
                     <tfoot>
                     <tr>
-                      <th>Rendering engine</th>
-                      <th>Browser</th>
-                      <th>Platform(s)</th>
-                      <th>Engine version</th>
-                      <th>CSS grade</th>
+                      <th>NIM</th>
+                      <th>Nama Mahasiswa</th>
+                      <th>Program Studi</th>
+                      <th>Nama Kelas</th>
+                      <th>Email Uis</th>
                       <th>Update</th>
-                      <th>Delete</th>
                     </tr>
                     </tfoot>
                   </table>

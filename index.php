@@ -1,3 +1,6 @@
+<?php 
+  include 'pages/connect/db_koneksi.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,49 +116,8 @@
                 </a>
               </li>
               </li>
-              <li class="nav-item">
-                <a href="?page=Profiles" title="Profiles"class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Profile</p>
-                </a>
-              </li>
             </ul>
           </li>
-          <!-- <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-                Forms Inputs Data
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="index.php?page=advanced" title="advanced"class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Mahasiswa</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/advanced.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Mata Kuliah</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/editors.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>IP Mata Kuliah</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/forms/validation.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dosen Mata Kuliah</p>
-                </a>
-              </li>
-            </ul>
-          </li> -->
             <li class="nav-item menu-open">
             <a href="#" class="active nav-link">
               <i class="nav-icon fas fa-table"></i>
@@ -175,12 +137,6 @@
               <a href="?page=DataDosen" title="DataDosen" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Tables Mata Kuliah</p>
-                </a>
-              </li>
-              <li class="nav-item">
-              <a href="?page=DataIpMatkul" title="DataIpMatkul" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Tables IP Mata Kuliah</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -249,7 +205,6 @@
         // Routers Dashbourd
         case 'Dashboard';  include "pages/Dashboard/Dashboard.php"; break;
         case 'Contacts' ; include "pages/Dashboard/Contacts.php"; break;
-        case 'Profiles' ; include "pages/Dashboard/Profiles.php"; break;
         //and Routers Dashbourd
         case 'advanced' ; include "pages/forms/advanced.php"; break;
         // Tables
@@ -261,9 +216,7 @@
 				default ; include 'pages/Dashboard/Dashboard.php';	
 			}
       ?>
-      <?php
-        $current_page = 'home'; include 'pages/Dashboard/Dashboard.php';
-      ?>
+     
 
 
 
