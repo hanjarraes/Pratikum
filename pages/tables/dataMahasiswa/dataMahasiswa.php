@@ -31,54 +31,146 @@
                         </button>
                       </div>
                       <div class="modal-body">
+                      <form action="?page=addDataMahasiswa" method="POST" enctype="multipart/form-data">
                           <div class="card-body">
                               <div class="form-group dpy-flex">
                                   <div class="form-group width-25 pr-3">
-                                    <label for="inputName">Project Name</label>
-                                    <input type="text" id="inputName" class="form-control">
+                                    <label for="inputName">NIM</label>
+                                    <input  name="nim" 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="nim" maxlength="18" 
+                                            minlength="4" 
+                                            onkeypress="return onlyNumber(event)" 
+                                            placeholder="NIM" require/>
+                                  </div>                          
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Nama Mahasiswa</label>
+                                    <input  name="nama_mahasiswa" 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="nama_mahasiswa"
+                                            onkeypress="return onlyNumber(event)" 
+                                            placeholder="Nama Mahasiswa" require/>
                                   </div>
                                   <div class="form-group width-25 pr-3">
-                                    <label for="inputName">Project Name</label>
-                                    <input type="text" id="inputName" class="form-control">
+                                    <label for="inputName">Program Studi</label>
+                                        <select name="program_studi" type="text" class="form-control input-rounded" id="program_studi" required>
+                                                <option value="">-Pilih-</option>
+                                                <option value="Islam">Teknik Informatika</option>
+                                                <option value="Teknik Industri">Teknik Industri</option>
+                                        </select>
                                   </div>
                                   <div class="form-group width-25 pr-3">
-                                    <label for="inputName">Project Name</label>
-                                    <input type="text" id="inputName" class="form-control">
-                                  </div>
-                                  <div class="form-group width-25 pr-3">
-                                    <label for="inputName">Project Name</label>
-                                    <input type="text" id="inputName" class="form-control">
+                                    <label for="inputName">Jenis Kelamin</label>
+                                        <select name="jenis_kelamin" type="text" class="form-control input-rounded" id="jenis_kelamin" required>
+                                                <option value="">-Pilih-</option>
+                                                <option value="Laki-Laki">Laki-Laki</option>
+                                                <option value="Perempuan">Perempuan</option>
+                                        </select>
                                   </div>
                               </div>
+                              
                               <div class="form-group dpy-flex">
-                                  <div class="form-group width-50 pr-3">
-                                    <label for="inputDescription">Project Description</label>
-                                    <textarea id="inputDescription" class="form-control" rows="4"></textarea>
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Tanggal Lahir</label>
+                                    <input  name="tgl_lahir" 
+                                            type="date" 
+                                            class="form-control" 
+                                            id="tgl_lahir"
+                                            onkeypress="return onlyNumber(event)" 
+                                            placeholder="Tanggal Lahir" require/>
                                   </div>
-                                  <div class="form-group width-50 pr-3">
-                                      <label for="inputStatus">Status</label>
-                                        <select id="inputStatus" class="form-control custom-select">
-                                          <option selected disabled>Select one</option>
-                                          <option>On Hold</option>
-                                          <option>Canceled</option>
-                                          <option>Success</option>
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Agama</label>
+                                        <select name="agama" type="text" class="form-control input-rounded" id="agama" required>
+                                                <option value="">-Pilih-</option>
+                                                <option value="Islam">Islam</option>
+                                                <option value="Protestan">Protestan</option>
+                                                <option value="Katolik">Katolik</option>
+                                                <option value="Buddha">Buddha</option>
+                                                <option value="Hindu">Hindu</option>
+                                                <option value="Konghucu">Konghucu</option>
                                         </select>
-                                        <label for="inputStatus">Status</label>
-                                        <select id="inputStatus" class="form-control custom-select">
-                                          <option selected disabled>Select one</option>
-                                          <option>On Hold</option>
-                                          <option>Canceled</option>
-                                          <option>Success</option>
-                                        </select>
+                                    </div>
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">No Hp</label>
+                                    <input  name="no_hp" 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="no_hp"
+                                            onkeypress="return onlyNumber(event)" 
+                                            placeholder="No Hp" require/>
+                                  </div>
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Nik</label>
+                                    <input  name="nik" 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="nik" 
+                                            onkeypress="return onlyNumber(event)" 
+                                            placeholder="NIK" require/>
+                                  </div>
+                              </div>
+
+                              <div class="form-group dpy-flex">
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Email Pribadi</label>
+                                    <input  name="email_pribadi" 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="email_pribadi"
+                                            onkeypress="return onlyNumber(event)" 
+                                            placeholder="Email Pribadi" require/>
+                                  </div>
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Email Uis</label>
+                                    <input  name="email_uis" 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="email_uis" 
+                                            onkeypress="return onlyNumber(event)" 
+                                            placeholder="Email Uis" require/>
+                                  </div>
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Id kelas</label>
+                                    <input  name="id_kelas" 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="id_kelas" 
+                                            onkeypress="return onlyNumber(event)" 
+                                            placeholder="Id Kelas" require/>
+                                  </div>
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Nama Kelas</label>
+                                    <input  name="nama_kelas" 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="nama_kelas" 
+                                            onkeypress="return onlyNumber(event)" 
+                                            placeholder="Nama Kelas" require/>
+                                  </div>
+                              </div>
+
+                              <div class="form-group dpy-flex">
+                                  <div class="form-group width-25 pr-3">
+                                    <label for="inputName">Nama Dosen</label>
+                                    <input  name="nama_dosen" 
+                                            type="text" 
+                                            class="form-control" 
+                                            id="nama_dosen" 
+                                            onkeypress="return onlyNumber(event)" 
+                                            placeholder="Nama Dosen" require/>
                                   </div>
                               </div>
                           </div>
                       </div>
 
                       <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-outline-light btn-primary">Save changes</button>
+                        <button type="reset" class="btn btn-outline-light" >Reset</button>
+                        <button type="submit" class="btn btn-outline-light btn-primary">Save changes</button>
                       </div>
+                      </form>
                     </div>
                     <!-- /.modal-content -->
                   </div>

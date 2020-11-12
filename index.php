@@ -208,11 +208,29 @@
         //and Routers Dashbourd
         case 'advanced' ; include "pages/forms/advanced.php"; break;
         // Tables
+        //Mahasiswa
         case 'DataMahasiswa' ; include "pages/tables/dataMahasiswa/dataMahasiswa.php"; break;
         case 'detailDataMahasiswa' ; include "pages/tables/dataMahasiswa/detailDataMahasiswa.php"; break;
         case 'editDataMahasiswa' ; include "pages/tables/dataMahasiswa/editDataMahasiswa.php"; break;
         case 'hapusDataMahasiswa' ; include "pages/tables/dataMahasiswa/hapusDataMahasiswa.php"; break;
         case 'prosesEditMahasiswa' ; include "pages/tables/dataMahasiswa/prosesEditMahasiswa.php"; break;
+        case 'addDataMahasiswa' ; include "pages/tables/dataMahasiswa/addDataMahasiswa.php"; break;
+
+        //Dosen
+        case 'DataDosen' ; include "pages/tables/dataDosen/dataDosen.php"; break;
+        case 'detailDataDosen' ; include "pages/tables/dataDosen/detailDataDosen.php"; break;
+        case 'editDataDosen' ; include "pages/tables/dataDosen/editDataDosen.php"; break;
+        case 'hapusDataDosen' ; include "pages/tables/dataDosen/hapusDataDosen.php"; break;
+        case 'prosesEditDosen' ; include "pages/tables/dataDosen/prosesEditDosen.php"; break;
+        case 'addDataDosen' ; include "pages/tables/dataDosen/addDataDosen.php"; break;
+
+        //Matkul
+        case 'DataMatkul' ; include "pages/tables/dataMatkul/dataMatkul.php"; break;
+        case 'detailDataMatkul' ; include "pages/tables/dataMatkul/detailDataMatkul.php"; break;
+        case 'editDataMatkul' ; include "pages/tables/dataMatkul/editDataMatkul.php"; break;
+        case 'hapusDataMatkul' ; include "pages/tables/dataMatkul/hapusDataMatkul.php"; break;
+        case 'prosesEditMatkul' ; include "pages/tables/dataMatkul/prosesEditMatkul.php"; break;
+        case 'addDataMatkul' ; include "pages/tables/dataMatkul/addDataMatkul.php"; break;
 
         case 'DataDosen' ; include "pages/tables/dataDosen/dataDosen.php"; break;
         case 'DataIpMatkul' ; include "pages/tables/DataIpMatkul/DataIpMatkul.php"; break;
