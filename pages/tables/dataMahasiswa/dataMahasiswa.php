@@ -147,13 +147,13 @@
                       <td><?= $row['nama_kelas']; ?></td>
                       <td><?= $row['email_uis']; ?></td>
                       <td class="d-flex">
-                        <a  class="btn mr-3 btn-outline-primary btn-sm " href="../includes/delete/delete-kepala-sekolah.php?id=<?= $row['id']; ?>">
+                        <a  class="btn mr-3 btn-outline-primary btn-sm " href="?page=detailDataMahasiswa&nim=<?= $row['nim']; ?>">
                             <i class="fa fa-eye"></i>
                         </a>
-                        <a  class="btn mr-3 btn-outline-warning btn-sm " href="../includes/delete/delete-kepala-sekolah.php?id=<?= $row['id']; ?>">
+                        <a  class="btn mr-3 btn-outline-warning btn-sm " href="?page=editDataMahasiswa&nim=<?= $row['nim']; ?>">
                             <i class="fas fa-edit"></i>
                         </a>
-                        <a class="btn  btn-outline-danger btn-sm text-danger" href="../includes/delete/delete-kepala-sekolah.php?id=<?= $row['id']; ?>" >
+                        <a class="btn  btn-outline-danger btn-sm text-danger" href="?page=hapusDataMahasiswa&nim=<?= $row['nim']; ?>" >
                             <i class="fas fa-trash"></i>
                         </a>
                       </td>

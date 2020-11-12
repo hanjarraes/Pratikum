@@ -209,6 +209,11 @@
         case 'advanced' ; include "pages/forms/advanced.php"; break;
         // Tables
         case 'DataMahasiswa' ; include "pages/tables/dataMahasiswa/dataMahasiswa.php"; break;
+        case 'detailDataMahasiswa' ; include "pages/tables/dataMahasiswa/detailDataMahasiswa.php"; break;
+        case 'editDataMahasiswa' ; include "pages/tables/dataMahasiswa/editDataMahasiswa.php"; break;
+        case 'hapusDataMahasiswa' ; include "pages/tables/dataMahasiswa/hapusDataMahasiswa.php"; break;
+        case 'prosesEditMahasiswa' ; include "pages/tables/dataMahasiswa/prosesEditMahasiswa.php"; break;
+
         case 'DataDosen' ; include "pages/tables/dataDosen/dataDosen.php"; break;
         case 'DataIpMatkul' ; include "pages/tables/DataIpMatkul/DataIpMatkul.php"; break;
         case 'DataMatkul' ; include "pages/tables/DataMatkul/DataMatkul.php"; break;
@@ -222,15 +227,8 @@
 
       <div>
     </section>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
-
-
-
-  <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
 
